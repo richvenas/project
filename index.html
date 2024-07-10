@@ -1,0 +1,43 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./imagen/logo.PNG">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Desafio 1 - Encriptador de Texto</title>
+</head>
+<body>
+     
+    <main>
+        <div class="cont_icon">
+            <img src="./imagen/logo.PNG" alt="logo de alura">
+        </div>
+        <div class="cont_textarea_botones">
+            <!-- contenedor textarea y botones -->
+        
+            <div class="cont_textarea">
+                <textarea name="textinput" id="textinput" placeholder="Ingrese el texto aqui..." oninput="corregirtexto(event)"></textarea>
+            </div>
+            <div class="cont_bot">
+                <button class="but_encr" onclick="encriptar()">Encriptar</button>
+                <button class="but_dese" onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </div>
+        <div id="div_des" class="cont_tex_des2">
+            <!-- contendor texto encriptado/desencriptado -->
+                <span id="texto_en">enterjentermplober</span>
+                <div id="id_btn_copiar" class="btn_copiar" style="display: flex;"><button onclick="copiar()">Copiar</button></div>
+                <img id="imagenlupa" src="./imagen/candado.png" alt="Mujer Lupa" style="display: none;">
+                <span id="texto_informacion1" class="text_alert"></span>∫
+                <span id="texto_informacion2" class="text_alert_descr"></span>
+        </div>
+    </main>
+    <footer>
+        <span>Reto por <a href="https://www.aluracursos.com/" target="_blank">Alura Latam</a> y <a href="https://www.oracle.com/cl/education/oracle-next-education/" target="_blank">Oracle One</a>. Desarrollado por <a href="https://richvenas.github.io/encriptador/" target="_blank">Ricardo Venancio</a>.</span>
+    </footer> 
+
+    <script src="./js/script.js"></script>
+
+</body></html>
